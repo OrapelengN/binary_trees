@@ -24,3 +24,15 @@ void print_binary_tree(const binary_tree_t *tree, int level)
 	/* Print left subtree with increased level */
 	print_binary_tree(tree->left, level + 1);
 }
+
+void binary_tree_print(binary_tree_t *tree)
+{
+	if (tree == NULL)
+		return;
+
+	printf("  .--(%d)--.\n", tree->n);
+	if (tree->left)
+		binary_tree_print(tree->left);
+	if (tree->right)
+	binary_tree_print(tree->right);
+}
