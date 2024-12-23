@@ -19,9 +19,9 @@ int main(void)
 
 	/* Print the tree before deletion */
 	binary_tree_print(root);
-    
+
 	/* Delete the entire tree */
 	binary_tree_delete(root);
-    
+
 	return (0);
 }
